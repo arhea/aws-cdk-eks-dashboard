@@ -178,7 +178,7 @@ export class KubernetesDashoard extends cdk.Construct {
                     ],
                     livenessProbe: {
                       httpGet: {
-                        scheme: 'https',
+                        scheme: 'HTTPS',
                         path: '/',
                         port: 8443
                       },
