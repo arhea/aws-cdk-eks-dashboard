@@ -33,6 +33,13 @@ const csa = new KubernetesDashboard(this, 'demo-dashboard', {
 |---|---|---|
 | `cluster` | The `@aws-cdk/aws-eks` cluster instance where this Dashboard should be deployed. | N/A |
 | `version` | The version of the Dashboard to deploy. Find the latest version based on your Kubernetes [version here](https://github.com/kubernetes/dashboard).  | `v1.10.1` |
+'
+
+To access the dashboard run `kubectl proxy` and navigate to `http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/`. You will be prompted to login, select `Token`. Run the token command that was output from the `cdk deploy`, it should look something like this:
+
+```bash
+DemoEKS.demoeksclusterGetTokenCommand4F0892F7 = aws eks get-token --cluster-name cluster-815c9727-e20b-4bb6-807b-b3269575c82e --region us-east-2 --role-arn arn:aws:iam::<Account ID>:role/DemoEKS-AdminRole38563C57-1QETBYLXWQ2E --profile demo | jq -r '.status.token'
+```
 
 ## Full Example
 
