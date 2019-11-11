@@ -152,11 +152,11 @@ export class KubernetesDashoard extends cdk.Construct {
                 }
               },
               spec: {
+                serviceAccountName: 'kubernetes-dashboard',
                 containers: [
                   {
                     name: 'kubernetes-dashboard',
                     image: 'k8s.gcr.io/kubernetes-dashboard-amd64:' + props.version,
-                    serviceAccountName: 'kubernetes-dashboard',
                     ports: [
                       {
                         containerPort: 8443,
