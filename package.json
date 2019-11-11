@@ -1,18 +1,11 @@
 {
   "name": "@arhea/aws-cdk-eks-dashboard",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A CDK Construct Library for Kubernetes Dashboard.",
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "watch": "tsc -w",
-    "test": "jest",
-    "cdk": "cdk"
-  },
-  "author": "Alex Rhea",
-  "license": "Apache-2.0",
-  "engines": {
-    "node": ">= 10.3.0"
+    "watch": "tsc -w"
   },
   "keywords": [
     "aws",
@@ -23,6 +16,11 @@
     "k8s",
     "kubernetes-dashboard"
   ],
+  "author": "Alex Rhea",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">= 10.3.0"
+  },
   "devDependencies": {
     "@aws-cdk/assert": "^1.15.0",
     "@types/jest": "^24.0.18",
@@ -39,5 +37,13 @@
   },
   "directories": {
     "lib": "lib"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arhea/aws-cdk-eks-dashboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arhea/aws-cdk-eks-dashboard/issues"
+  },
+  "homepage": "https://github.com/arhea/aws-cdk-eks-dashboard#readme"
 }

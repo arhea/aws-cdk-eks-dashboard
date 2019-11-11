@@ -16,7 +16,7 @@ export interface KubernetesDashoardProps {
   /**
    * The version of the kubernetes dashboard to deploy.
    *
-   * @default v1.10.1
+   * @default 1.10.1
    */
   version?: String;
 
