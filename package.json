@@ -1,26 +1,42 @@
 {
-  "name": "aws-cdk-eks-dashboard",
+  "name": "@arhea/aws-cdk-eks-dashboard",
   "version": "0.1.0",
-  "bin": {
-    "aws-cdk-eks-dashboard": "bin/aws-cdk-eks-dashboard.js"
-  },
+  "description": "A CDK Construct Library for Kubernetes Dashboard.",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"
   },
+  "author": "Alex Rhea",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">= 10.3.0"
+  },
+  "keywords": [
+    "aws",
+    "cdk",
+    "constructs",
+    "eks",
+    "dashboard",
+    "k8s",
+    "kubernetes-dashboard"
+  ],
   "devDependencies": {
     "@aws-cdk/assert": "^1.15.0",
     "@types/jest": "^24.0.18",
+    "aws-cdk": "^1.15.0",
     "jest": "^24.9.0",
     "ts-jest": "^24.0.2",
-    "aws-cdk": "^1.15.0",
     "ts-node": "^8.1.0",
     "typescript": "~3.6.2"
   },
   "dependencies": {
+    "@aws-cdk/aws-eks": "^1.15.0",
     "@aws-cdk/core": "^1.15.0",
     "source-map-support": "^0.5.9"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
