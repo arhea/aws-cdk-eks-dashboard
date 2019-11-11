@@ -16,9 +16,9 @@ export interface KubernetesDashoardProps {
   /**
    * The version of the kubernetes dashboard to deploy.
    *
-   * @default 1.10.1
+   * @default v1.10.1
    */
-  version?: String;
+  version?: string;
 
 }
 
@@ -34,7 +34,7 @@ export class KubernetesDashoard extends cdk.Construct {
 
     // default the version to the latest version
     if(!props.version) {
-      props.version = '1.10.1';
+      props.version = 'v1.10.1';
     }
 
     this.kubernetesDashboard = new eks.KubernetesResource(this, 'dashboard-manifest', {

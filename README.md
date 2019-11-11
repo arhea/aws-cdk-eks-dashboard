@@ -25,14 +25,14 @@ import { ClusterAutoscaler } from '@arhea/aws-cdk-eks-dashboard';
 
 const csa = new KubernetesDashboard(this, 'demo-dashboard', {
   cluster: cluster, // your EKS cluster
-  version: '1.10.1' // the version of dashboard to deploy
+  version: 'v1.10.1' // the version of dashboard to deploy
 });
 ```
 
 | Option | Description | Default |
 |---|---|---|
 | `cluster` | The `@aws-cdk/aws-eks` cluster instance where this Dashboard should be deployed. | N/A |
-| `version` | The version of the Dashboard to deploy. Find the latest version based on your Kubernetes [version here](https://github.com/kubernetes/dashboard).  | `1.10.1` |
+| `version` | The version of the Dashboard to deploy. Find the latest version based on your Kubernetes [version here](https://github.com/kubernetes/dashboard).  | `v1.10.1` |
 
 ## Full Example
 
