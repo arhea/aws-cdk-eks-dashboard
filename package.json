@@ -1,6 +1,6 @@
 {
   "name": "@arhea/aws-cdk-eks-dashboard",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A CDK Construct Library for Kubernetes Dashboard.",
   "scripts": {
     "build": "tsc",
